@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="scroll-smooth selection:bg-black selection:text-lila-500 no-touchevents hydrated"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Webstax Inc"/>
+    <meta name="theme-color" content="#f5f5f5" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="msapplication-TileColor" content="#f5f5f5" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="your keywords" content="Add your keywords here" />
+    <meta name="title" content="Aarnav Singh" />
+    <meta name="description" content="#" />
+    <meta name="author" content="Aarnav Singh" />
+    <meta property="og:title" content="Gas: Aarnav Singh" />
+    <meta property="og:description" content="#" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+
+    <title>Webstax Inc</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="mask-icon"
+      href="/images/favicons/safari-pinned-tab.svg"
+      color="#ffffff"
+    />
+    <link rel="manifest" href="/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/favicons/safari-pinned-tab.svg"
+      color="#ffffff"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/1.css" />
+    <link rel="stylesheet" href="/2.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@ryangjchandler/alpine-tooltip@1.x.x/dist/cdn.min.js"
+      defer
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/@alpinejs/focus@3.10.3/dist/cdn.min.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"
+    ></script>
+    <link rel="stylesheet" href="/3.css" />
+    <link rel="stylesheet" href="/4.css" />
+  </head>
+
+  <body class="border-x-2 border-black bg-white flex flex-col min-h-screen">
+    <main class="flex-grow">
+      <section class="2xl:max-w-7xl mx-auto">
+        <div class="mx-auto bg-lila-500 2xl:border-x-2 border-t-2 border-black">
+          <div class="text-center">
+            <img src="/c.png" alt="header" class="w-full"></img>
+          </div>
+        </div>
+      </section>
+      <div
+        class="mx-auto w-full bg-lila-500 2xl:border-2 justify-center sticky top-0 z-20 2xl:max-w-7xl border-y-2 border-black"
+      >
+        <div
+          class="mx-auto w-full flex flex-col lg:flex-row py-6 md:py-0 lg:items-center lg:justify-between 2xl:max-w-7xl px-8 md:px-0"
+          x-data="{ open: false }"
+        >
+          <div class="text-black items-center flex justify-between flex-row">
+            <a
+              class="items-center font-bold gap-3 inline-flex text-lg tracking-tighter md:hidden"
+              title="link to your page"
+              aria-label="your label"
+              href="/"
+              >Webstax Inc
+            </a>
+            <button
+              class="focus:outline-none focus:shadow-outline md:hidden ml-auto border-2 border-black bg-red-500"
+              @click="open = !open"
+            >
+              <svg
+                class="h-8 w-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  :class="{'hidden': open, 'inline-flex': !open }"
+                  class="inline-flex"
+                  d="M4 6h16M4 12h16M4 18h16"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                ></path>
+                <path
+                  :class="{'hidden': !open, 'inline-flex': open }"
+                  class="hidden"
+                  d="M6 18L18 6M6 6l12 12"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <nav
+            :class="{'flex': open, 'hidden': !open}"
+            class="flex-col items-center flex-grow hidden md:flex text-black text-lg font-medium tracking-wide md:flex-row md:justify-start md:mt-0 gap-4 lg:p-0 py-2 md:py-0 md:px-0 md:pb-0 px-5"
+          >
+            <a
+              class="duration-300 focus:text-orange/90 hover:text-lila-900 px-4 py-2 transform transition md:ml-8 lg:ml-16 2xl:ml-0"
+              title="link to your page"
+              aria-label="your label"
+              href="/"
+              >Overview
+            </a>
+            <a
+              class="duration-300 focus:text-orange/90 hover:text-lila-900 px-4 py-2 transform transition"
+              title="link to your page"
+              aria-label="your label"
+              href="/components/overview"
+              >Components
+            </a>
+            <div
+              @click.away="open = false"
+              class="relative"
+              x-data="{ open: false }"
+            >
+              <button
+                @click="open = !open"
+                class="duration-300 focus:text-orange/90 hover:text-lila-900 px-4 py-2 transform transition inline-flex items-center gap-3"
+              >
+                <span>Style Guide</span
+                ><svg
+                  :class="{'rotate-180': open, 'rotate-0': !open}"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="inline h-4 transition-transform duration-200 transform rotate-0 icon icon-tabler icon-tabler-chevron-down"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M6 9l6 6l6 -6"></path>
+                </svg>
+              </button>
+              <div
+                x-show="open"
+                style="display: none"
+                x-transition:enter="transition ease-out duration-100"
+                x-transition:enter-start="transform opacity-0 scale-95"
+                x-transition:enter-end="transform opacity-100 scale-100"
+                x-transition:leave="transition ease-in duration-75"
+                x-transition:leave-start="transform opacity-100 scale-100"
+                x-transition:leave-end="transform opacity-0 scale-95"
+                class="absolute right-0 z-10 w-auto mt-2 origin-top-right rounded-lg bg-white ring-2 ring-black focus:outline-none"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="menu-button"
+                tabindex="-1"
+              >
+                <div class="py-1 bg-white rounded-xl" role="none">
+                  <a
+                    title="link to your page"
+                    aria-label="your label"
+                    href="/components/typography"
+                    class="block text-left px-4 py-2 text-sm text-black hover:text-lila-800 w-full"
+                    role="menuitem"
+                    tabindex="-1"
+                    id="menu-item-0"
+                    >Typography
+                  </a>
+                  <a
+                    title="link to your page"
+                    aria-label="your label"
+                    href="/components/colors"
+                    class="block text-left px-4 py-2 text-sm text-black hover:text-lila-800 w-full"
+                    role="menuitem"
+                    tabindex="-1"
+                    id="menu-item-2"
+                    >Colors</a
+                  >
+                </div>
+              </div>
+            </div>
+            <a
+              class="text-white md:ml-auto bg-black border-l-2 border-black duration-500 ease-in-out focus:outline-none ring-inset ring-offset-black focus:ring-2 focus:ring-black focus:ring-offset-2 h-12 lg:h-20 hover:bg-white hover:text-black inline-flex tracking-wide items-center justify-center px-6 text-center transform transition py-2 md:py-4"
+              title="link to your page"
+              aria-label="your label"
+              href="https://lexingtonthemes.lemonsqueezy.com/checkout/buy/645ac44b-ee66-4368-bb58-be869569fb88"
+              ><span>Get A Quote</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+      <section class="overflow-hidden relative">
+        <div
+          class="mx-auto 2xl:max-w-7xl border-b-2 border-black 2xl:border-x-2 bg-lila-500 relative overflow-hidden"
+        >
+          <img
+            class="absolute shadow-large rounded-full shadow-black w-72 h-72 -top-20 -right-20"
+            src="/images/blob3.svg"
+            alt="your alt-text"
+          />
+          <img
+            class="absolute shadow-large rounded-full shadow-black w-72 h-72 -bottom-20 left-12"
+            src="/images/blob4.svg"
+            alt="your alt-text"
+          />
+          <img
+            class="absolute w-96 shadow-large rounded-full shadow-black h-96 -bottom-32 -right-20"
+            src="/images/blob1.svg"
+            alt="your alt-text"
+          />
+          <img
+            class="absolute shadow-large rounded-full shadow-black w-72 h-72 bottom-12 -left-20"
+            src="/images/blob2.svg"
+            alt="your alt-text"
+          />
+          <img
+            class="absolute shadow-large rounded-full shadow-black w-72 h-72 -top-48 left-52 right-52"
+            src="/images/blob5.svg"
+            alt="your alt-text"
+          />
+          <div class="text-center mx-auto p-8 lg:p-20 lg:py-48 relative">
+            <div class="mx-auto max-w-2xl">
+              <h2
+                class="text-3xl lg:text-5xl font-medium text-black text-balance"
+              >
+                Pioneering the future of <span>decentralized finance </span>
+              </h2>
+              <p class="xl:text-xl text-black tracking-wide mt-4 text-balance">
+                Join us on our journey to transform the financial landscape with
+                cutting-edge cryptocurrency solutions and groundbreaking
+                blockchain technologies.
+              </p>
+            </div>
+            <div class="flex mt-10 justify-center">
+              <a
+                class="text-black items-center shadow shadow-black text-lg font-semibold inline-flex px-6 focus:outline-none justify-center text-center bg-white border-black ease-in-out transform transition-all focus:ring-lila-700 focus:shadow-none border-2 duration-100 focus:bg-black focus:text-white sm:w-auto py-3 rounded-lg h-16 focus:translate-y-1 w-full hover:text-lila-800 tracing-wide"
+                href="/"
+                title="link to your page"
+                aria-label="your label"
+                >Explore all pages
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="overflow-hidden">
+        <div
+          class="mx-auto 2xl:max-w-7xl px-8 lg:px-20 2xl:px-0 bg-black overflow-hidden 2xl:border-x-2 border-black"
+        >
+          <div
+            class="relative flex items-center gap-4 py-12 animate-marqueeLeft whitespace-nowrap"
+          >
+            <img src="/brands/1.svg" alt="Brand Logo 1" /><img
+              src="/brands/2.svg"
+              alt="Brand Logo 2"
+            /><img src="/brands/3.svg" alt="Brand Logo 3" /><img
+              src="/brands/4.svg"
+              alt="Brand Logo 4"
+            /><img src="/brands/5.svg" alt="Brand Logo 5" /><img
+              src="/brands/6.svg"
+              alt="Brand Logo 6"
+            /><img src="/brands/7.svg" alt="Brand Logo 7" /><img
+              src="/brands/8.svg"
+              alt="Brand Logo 8"
+            /><img src="/brands/9.svg" alt="Brand Logo 9" /><img
+              src="/brands/10.svg"
+              alt="Brand Logo 10"
+            /><img src="/brands/11.svg" alt="Brand Logo 11" /><img
+              src="/brands/12.svg"
+              alt="Brand Logo 12"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="relative flex items-center w-full">
+        <div
+          class="relative items-center w-full mx-auto 2xl:max-w-7xl 2xl:border-x-2 border-b-2 border-black"
+        >
+          <div
+            class="relative p-8 lg:p-20 items-center gap-12 h-full bg-yellow-500"
+          >
+            <div class="text-center max-w-4xl mx-auto">
+              <p class="text-3xl lg:text-5xl font-medium text-black">
+                Navigating the
+                <span class="md:block">digital financial frontier</span>
+              </p>
+              <p
+                class="xl:text-xl text-black tracking-wide max-w-xl mx-auto mt-4"
+              >
+                Join us on our journey to transform the financial landscape with
+                cutting-edge cryptocurrency solutions and groundbreaking
+                blockchain technologies.
+              </p>
+            </div>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:text-center lg:grid-cols-3 gap-6 lg:gap-12 mt-12"
+            >
+              <div>
+                <img
+                  class="size-20 mx-auto"
+                  src="/images/blob1.svg"
+                  alt="Secure Wallets"
+                />
+                <h2 class="text-3xl text-black font-medium mt-8">
+                  Secure Wallets
+                </h2>
+                <p class="text-lg tracking-wide text-black mt-4">
+                  Rest easy knowing your crypto assets are protected by
+                  state-of-the-art security measures and encryption.
+                </p>
+              </div>
+              <div>
+                <img
+                  class="size-20 mx-auto"
+                  src="/images/blob2.svg"
+                  alt="Instant Transactions"
+                />
+                <h2 class="text-3xl text-black font-medium mt-8">
+                  Instant Transactions
+                </h2>
+                <p class="text-lg tracking-wide text-black mt-4">
+                  Experience the convenience of near-instantaneous
+                  cryptocurrency transfers, allowing you to send.
+                </p>
+              </div>
+              <div>
+                <img
+                  class="size-20 mx-auto"
+                  src="/images/blob3.svg"
+                  alt="Multi-Currency Support"
+                />
+                <h2 class="text-3xl text-black font-medium mt-8">
+                  Multi-Currency Support
+                </h2>
+                <p class="text-lg tracking-wide text-black mt-4">
+                  Access a diverse range of cryptocurrencies in one unified
+                  platform, enabling you to explore.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div
+          class="relative items-center w-full divide-y-2 divide-black mx-auto 2xl:max-w-7xl border-b-2 border-black 2xl:border-x-2 lg:grid-cols-3"
+        >
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 divide-y-2 divide-black md:divide-y-0 md:divide-x-2"
+          >
+            <div class="block w-full aspect-square bg-green-500 h-full">
+              <img
+                class="object-cover"
+                src="/images/thumbnail2.svg"
+                alt="Staking Rewards"
+              />
+            </div>
+            <div
+              class="relative p-8 lg:px-20 items-center gap-12 h-full lg:inline-flex bg-white"
+            >
+              <div class="max-w-xl text-left">
+                <div>
+                  <img
+                    class="size-20"
+                    src="/images/blob2.svg"
+                    alt="your alt-text"
+                  />
+                  <p class="text-3xl mt-12 lg:text-5xl font-medium text-black">
+                    Staking Rewards
+                  </p>
+                  <p class="max-w-xl mt-4 xl:text-xl tracking-wide text-black">
+                    Put your crypto assets to work and earn passive income
+                    through staking, a feature that allows you to participate in
+                    network validation and reap rewards.
+                  </p>
+                  <ul
+                    class="xl:text-xl tracking-wide mt-6 text-black flex flex-col"
+                    role="list"
+                  >
+                    <li class="flex items-center gap-3">
+                      <svg
+                        class="size-6"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.22789 16.8936H4.22789V18.8936H5.22789V16.8936ZM31.2279 18.8936C31.7802 18.8936 32.2279 18.4459 32.2279 17.8936C32.2279 17.3413 31.7802 16.8936 31.2279 16.8936V18.8936ZM22.2279 7.89362V6.89362H20.2279V7.89362H22.2279ZM30.6485 18.671C31.1334 18.9355 31.7408 18.7568 32.0053 18.2719C32.2697 17.7871 32.0911 17.1797 31.6062 16.9152L30.6485 18.671ZM20.2278 27.7931V28.7931H22.2278V27.7931H20.2278ZM5.22789 18.8936H31.1273V16.8936H5.22789V18.8936ZM31.1273 18.8936H31.2279V16.8936H31.1273V18.8936ZM20.2279 7.89362C20.2279 9.36603 21.0232 10.7723 21.9994 11.9705C22.9957 13.1932 24.2995 14.3434 25.5662 15.3222C26.8387 16.3055 28.1063 17.1406 29.0529 17.7286C29.5271 18.0232 29.9231 18.2571 30.2017 18.4181C30.341 18.4987 30.4511 18.561 30.5272 18.6037C30.5653 18.625 30.5948 18.6414 30.6152 18.6527C30.6254 18.6583 30.6334 18.6627 30.6389 18.6658C30.6417 18.6673 30.6439 18.6685 30.6455 18.6694C30.6463 18.6698 30.647 18.6702 30.6475 18.6704C30.6477 18.6706 30.648 18.6707 30.6481 18.6708C30.6484 18.6709 30.6485 18.671 31.1274 17.7931C31.6062 16.9152 31.6063 16.9153 31.6064 16.9153C31.6064 16.9153 31.6064 16.9153 31.6064 16.9153C31.6063 16.9152 31.606 16.9151 31.6056 16.9149C31.6048 16.9144 31.6034 16.9137 31.6015 16.9126C31.5975 16.9104 31.5913 16.907 31.5828 16.9023C31.5657 16.8929 31.5397 16.8784 31.5052 16.8591C31.4363 16.8204 31.3337 16.7624 31.2024 16.6865C30.9396 16.5346 30.5621 16.3116 30.1083 16.0297C29.1987 15.4647 27.9914 14.6686 26.7891 13.7396C25.5809 12.806 24.4098 11.7626 23.5499 10.7072C22.67 9.62732 22.2279 8.6712 22.2279 7.89362H20.2279ZM31.1273 17.8936C30.7527 16.9664 30.7524 16.9666 30.7521 16.9667C30.7519 16.9667 30.7516 16.9669 30.7513 16.967C30.7507 16.9673 30.7499 16.9676 30.749 16.9679C30.7472 16.9687 30.7447 16.9697 30.7417 16.9709C30.7357 16.9734 30.7273 16.9768 30.7166 16.9812C30.6953 16.99 30.6648 17.0028 30.6258 17.0193C30.5478 17.0524 30.4356 17.1007 30.2941 17.1639C30.0113 17.2903 29.6105 17.4762 29.1309 17.7176C28.1742 18.1991 26.8918 18.9078 25.603 19.8126C24.3193 20.7138 22.9944 21.8337 21.9824 23.1472C20.9694 24.4621 20.2278 26.0278 20.2278 27.7931H22.2278C22.2278 26.6087 22.7237 25.4621 23.5668 24.3678C24.411 23.272 25.5609 22.2858 26.7521 21.4495C27.9382 20.6169 29.1306 19.9568 30.0301 19.504C30.4786 19.2782 30.8512 19.1055 31.1097 18.9901C31.2389 18.9324 31.3394 18.8891 31.4064 18.8607C31.4399 18.8465 31.465 18.836 31.4812 18.8293C31.4892 18.826 31.495 18.8236 31.4985 18.8222C31.5003 18.8215 31.5014 18.821 31.502 18.8208C31.5023 18.8206 31.5024 18.8206 31.5024 18.8206C31.5024 18.8206 31.5023 18.8206 31.5023 18.8206C31.5021 18.8207 31.5019 18.8208 31.1273 17.8936Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      Share
+                    </li>
+                    <li class="flex items-center gap-3">
+                      <svg
+                        class="size-6"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.22789 16.8936H4.22789V18.8936H5.22789V16.8936ZM31.2279 18.8936C31.7802 18.8936 32.2279 18.4459 32.2279 17.8936C32.2279 17.3413 31.7802 16.8936 31.2279 16.8936V18.8936ZM22.2279 7.89362V6.89362H20.2279V7.89362H22.2279ZM30.6485 18.671C31.1334 18.9355 31.7408 18.7568 32.0053 18.2719C32.2697 17.7871 32.0911 17.1797 31.6062 16.9152L30.6485 18.671ZM20.2278 27.7931V28.7931H22.2278V27.7931H20.2278ZM5.22789 18.8936H31.1273V16.8936H5.22789V18.8936ZM31.1273 18.8936H31.2279V16.8936H31.1273V18.8936ZM20.2279 7.89362C20.2279 9.36603 21.0232 10.7723 21.9994 11.9705C22.9957 13.1932 24.2995 14.3434 25.5662 15.3222C26.8387 16.3055 28.1063 17.1406 29.0529 17.7286C29.5271 18.0232 29.9231 18.2571 30.2017 18.4181C30.341 18.4987 30.4511 18.561 30.5272 18.6037C30.5653 18.625 30.5948 18.6414 30.6152 18.6527C30.6254 18.6583 30.6334 18.6627 30.6389 18.6658C30.6417 18.6673 30.6439 18.6685 30.6455 18.6694C30.6463 18.6698 30.647 18.6702 30.6475 18.6704C30.6477 18.6706 30.648 18.6707 30.6481 18.6708C30.6484 18.6709 30.6485 18.671 31.1274 17.7931C31.6062 16.9152 31.6063 16.9153 31.6064 16.9153C31.6064 16.9153 31.6064 16.9153 31.6064 16.9153C31.6063 16.9152 31.606 16.9151 31.6056 16.9149C31.6048 16.9144 31.6034 16.9137 31.6015 16.9126C31.5975 16.9104 31.5913 16.907 31.5828 16.9023C31.5657 16.8929 31.5397 16.8784 31.5052 16.8591C31.4363 16.8204 31.3337 16.7624 31.2024 16.6865C30.9396 16.5346 30.5621 16.3116 30.1083 16.0297C29.1987 15.4647 27.9914 14.6686 26.7891 13.7396C25.5809 12.806 24.4098 11.7626 23.5499 10.7072C22.67 9.62732 22.2279 8.6712 22.2279 7.89362H20.2279ZM31.1273 17.8936C30.7527 16.9664 30.7524 16.9666 30.7521 16.9667C30.7519 16.9667 30.7516 16.9669 30.7513 16.967C30.7507 16.9673 30.7499 16.9676 30.749 16.9679C30.7472 16.9687 30.7447 16.9697 30.7417 16.9709C30.7357 16.9734 30.7273 16.9768 30.7166 16.9812C30.6953 16.99 30.6648 17.0028 30.6258 17.0193C30.5478 17.0524 30.4356 17.1007 30.2941 17.1639C30.0113 17.2903 29.6105 17.4762 29.1309 17.7176C28.1742 18.1991 26.8918 18.9078 25.603 19.8126C24.3193 20.7138 22.9944 21.8337 21.9824 23.1472C20.9694 24.4621 20.2278 26.0278 20.2278 27.7931H22.2278C22.2278 26.6087 22.7237 25.4621 23.5668 24.3678C24.411 23.272 25.5609 22.2858 26.7521 21.4495C27.9382 20.6169 29.1306 19.9568 30.0301 19.504C30.4786 19.2782 30.8512 19.1055 31.1097 18.9901C31.2389 18.9324 31.3394 18.8891 31.4064 18.8607C31.4399 18.8465 31.465 18.836 31.4812 18.8293C31.4892 18.826 31.495 18.8236 31.4985 18.8222C31.5003 18.8215 31.5014 18.821 31.502 18.8208C31.5023 18.8206 31.5024 18.8206 31.5024 18.8206C31.5024 18.8206 31.5023 18.8206 31.5023 18.8206C31.5021 18.8207 31.5019 18.8208 31.1273 17.8936Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      Present
+                    </li>
+                    <li class="flex items-center gap-3">
+                      <svg
+                        class="size-6"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.22789 16.8936H4.22789V18.8936H5.22789V16.8936ZM31.2279 18.8936C31.7802 18.8936 32.2279 18.4459 32.2279 17.8936C32.2279 17.3413 31.7802 16.8936 31.2279 16.8936V18.8936ZM22.2279 7.89362V6.89362H20.2279V7.89362H22.2279ZM30.6485 18.671C31.1334 18.9355 31.7408 18.7568 32.0053 18.2719C32.2697 17.7871 32.0911 17.1797 31.6062 16.9152L30.6485 18.671ZM20.2278 27.7931V28.7931H22.2278V27.7931H20.2278ZM5.22789 18.8936H31.1273V16.8936H5.22789V18.8936ZM31.1273 18.8936H31.2279V16.8936H31.1273V18.8936ZM20.2279 7.89362C20.2279 9.36603 21.0232 10.7723 21.9994 11.9705C22.9957 13.1932 24.2995 14.3434 25.5662 15.3222C26.8387 16.3055 28.1063 17.1406 29.0529 17.7286C29.5271 18.0232 29.9231 18.2571 30.2017 18.4181C30.341 18.4987 30.4511 18.561 30.5272 18.6037C30.5653 18.625 30.5948 18.6414 30.6152 18.6527C30.6254 18.6583 30.6334 18.6627 30.6389 18.6658C30.6417 18.6673 30.6439 18.6685 30.6455 18.6694C30.6463 18.6698 30.647 18.6702 30.6475 18.6704C30.6477 18.6706 30.648 18.6707 30.6481 18.6708C30.6484 18.6709 30.6485 18.671 31.1274 17.7931C31.6062 16.9152 31.6063 16.9153 31.6064 16.9153C31.6064 16.9153 31.6064 16.9153 31.6064 16.9153C31.6063 16.9152 31.606 16.9151 31.6056 16.9149C31.6048 16.9144 31.6034 16.9137 31.6015 16.9126C31.5975 16.9104 31.5913 16.907 31.5828 16.9023C31.5657 16.8929 31.5397 16.8784 31.5052 16.8591C31.4363 16.8204 31.3337 16.7624 31.2024 16.6865C30.9396 16.5346 30.5621 16.3116 30.1083 16.0297C29.1987 15.4647 27.9914 14.6686 26.7891 13.7396C25.5809 12.806 24.4098 11.7626 23.5499 10.7072C22.67 9.62732 22.2279 8.6712 22.2279 7.89362H20.2279ZM31.1273 17.8936C30.7527 16.9664 30.7524 16.9666 30.7521 16.9667C30.7519 16.9667 30.7516 16.9669 30.7513 16.967C30.7507 16.9673 30.7499 16.9676 30.749 16.9679C30.7472 16.9687 30.7447 16.9697 30.7417 16.9709C30.7357 16.9734 30.7273 16.9768 30.7166 16.9812C30.6953 16.99 30.6648 17.0028 30.6258 17.0193C30.5478 17.0524 30.4356 17.1007 30.2941 17.1639C30.0113 17.2903 29.6105 17.4762 29.1309 17.7176C28.1742 18.1991 26.8918 18.9078 25.603 19.8126C24.3193 20.7138 22.9944 21.8337 21.9824 23.1472C20.9694 24.4621 20.2278 26.0278 20.2278 27.7931H22.2278C22.2278 26.6087 22.7237 25.4621 23.5668 24.3678C24.411 23.272 25.5609 22.2858 26.7521 21.4495C27.9382 20.6169 29.1306 19.9568 30.0301 19.504C30.4786 19.2782 30.8512 19.1055 31.1097 18.9901C31.2389 18.9324 31.3394 18.8891 31.4064 18.8607C31.4399 18.8465 31.465 18.836 31.4812 18.8293C31.4892 18.826 31.495 18.8236 31.4985 18.8222C31.5003 18.8215 31.5014 18.821 31.502 18.8208C31.5023 18.8206 31.5024 18.8206 31.5024 18.8206C31.5024 18.8206 31.5023 18.8206 31.5023 18.8206C31.5021 18.8207 31.5019 18.8208 31.1273 17.8936Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      Gather feedback
+                    </li>
+                    <li class="flex items-center gap-3">
+                      <svg
+                        class="size-6"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.22789 16.8936H4.22789V18.8936H5.22789V16.8936ZM31.2279 18.8936C31.7802 18.8936 32.2279 18.4459 32.2279 17.8936C32.2279 17.3413 31.7802 16.8936 31.2279 16.8936V18.8936ZM22.2279 7.89362V6.89362H20.2279V7.89362H22.2279ZM30.6485 18.671C31.1334 18.9355 31.7408 18.7568 32.0053 18.2719C32.2697 17.7871 32.0911 17.1797 31.6062 16.9152L30.6485 18.671ZM20.2278 27.7931V28.7931H22.2278V27.7931H20.2278ZM5.22789 18.8936H31.1273V16.8936H5.22789V18.8936ZM31.1273 18.8936H31.2279V16.8936H31.1273V18.8936ZM20.2279 7.89362C20.2279 9.36603 21.0232 10.7723 21.9994 11.9705C22.9957 13.1932 24.2995 14.3434 25.5662 15.3222C26.8387 16.3055 28.1063 17.1406 29.0529 17.7286C29.5271 18.0232 29.9231 18.2571 30.2017 18.4181C30.341 18.4987 30.4511 18.561 30.5272 18.6037C30.5653 18.625 30.5948 18.6414 30.6152 18.6527C30.6254 18.6583 30.6334 18.6627 30.6389 18.6658C30.6417 18.6673 30.6439 18.6685 30.6455 18.6694C30.6463 18.6698 30.647 18.6702 30.6475 18.6704C30.6477 18.6706 30.648 18.6707 30.6481 18.6708C30.6484 18.6709 30.6485 18.671 31.1274 17.7931C31.6062 16.9152 31.6063 16.9153 31.6064 16.9153C31.6064 16.9153 31.6064 16.9153 31.6064 16.9153C31.6063 16.9152 31.606 16.9151 31.6056 16.9149C31.6048 16.9144 31.6034 16.9137 31.6015 16.9126C31.5975 16.9104 31.5913 16.907 31.5828 16.9023C31.5657 16.8929 31.5397 16.8784 31.5052 16.8591C31.4363 16.8204 31.3337 16.7624 31.2024 16.6865C30.9396 16.5346 30.5621 16.3116 30.1083 16.0297C29.1987 15.4647 27.9914 14.6686 26.7891 13.7396C25.5809 12.806 24.4098 11.7626 23.5499 10.7072C22.67 9.62732 22.2279 8.6712 22.2279 7.89362H20.2279ZM31.1273 17.8936C30.7527 16.9664 30.7524 16.9666 30.7521 16.9667C30.7519 16.9667 30.7516 16.9669 30.7513 16.967C30.7507 16.9673 30.7499 16.9676 30.749 16.9679C30.7472 16.9687 30.7447 16.9697 30.7417 16.9709C30.7357 16.9734 30.7273 16.9768 30.7166 16.9812C30.6953 16.99 30.6648 17.0028 30.6258 17.0193C30.5478 17.0524 30.4356 17.1007 30.2941 17.1639C30.0113 17.2903 29.6105 17.4762 29.1309 17.7176C28.1742 18.1991 26.8918 18.9078 25.603 19.8126C24.3193 20.7138 22.9944 21.8337 21.9824 23.1472C20.9694 24.4621 20.2278 26.0278 20.2278 27.7931H22.2278C22.2278 26.6087 22.7237 25.4621 23.5668 24.3678C24.411 23.272 25.5609 22.2858 26.7521 21.4495C27.9382 20.6169 29.1306 19.9568 30.0301 19.504C30.4786 19.2782 30.8512 19.1055 31.1097 18.9901C31.2389 18.9324 31.3394 18.8891 31.4064 18.8607C31.4399 18.8465 31.465 18.836 31.4812 18.8293C31.4892 18.826 31.495 18.8236 31.4985 18.8222C31.5003 18.8215 31.5014 18.821 31.502 18.8208C31.5023 18.8206 31.5024 18.8206 31.5024 18.8206C31.5024 18.8206 31.5023 18.8206 31.5023 18.8206C31.5021 18.8207 31.5019 18.8208 31.1273 17.8936Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      Interact with prototypes
+                    </li>
+                    <li class="flex items-center gap-3">
+                      <svg
+                        class="size-6"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.22789 16.8936H4.22789V18.8936H5.22789V16.8936ZM31.2279 18.8936C31.7802 18.8936 32.2279 18.4459 32.2279 17.8936C32.2279 17.3413 31.7802 16.8936 31.2279 16.8936V18.8936ZM22.2279 7.89362V6.89362H20.2279V7.89362H22.2279ZM30.6485 18.671C31.1334 18.9355 31.7408 18.7568 32.0053 18.2719C32.2697 17.7871 32.0911 17.1797 31.6062 16.9152L30.6485 18.671ZM20.2278 27.7931V28.7931H22.2278V27.7931H20.2278ZM5.22789 18.8936H31.1273V16.8936H5.22789V18.8936ZM31.1273 18.8936H31.2279V16.8936H31.1273V18.8936ZM20.2279 7.89362C20.2279 9.36603 21.0232 10.7723 21.9994 11.9705C22.9957 13.1932 24.2995 14.3434 25.5662 15.3222C26.8387 16.3055 28.1063 17.1406 29.0529 17.7286C29.5271 18.0232 29.9231 18.2571 30.2017 18.4181C30.341 18.4987 30.4511 18.561 30.5272 18.6037C30.5653 18.625 30.5948 18.6414 30.6152 18.6527C30.6254 18.6583 30.6334 18.6627 30.6389 18.6658C30.6417 18.6673 30.6439 18.6685 30.6455 18.6694C30.6463 18.6698 30.647 18.6702 30.6475 18.6704C30.6477 18.6706 30.648 18.6707 30.6481 18.6708C30.6484 18.6709 30.6485 18.671 31.1274 17.7931C31.6062 16.9152 31.6063 16.9153 31.6064 16.9153C31.6064 16.9153 31.6064 16.9153 31.6064 16.9153C31.6063 16.9152 31.606 16.9151 31.6056 16.9149C31.6048 16.9144 31.6034 16.9137 31.6015 16.9126C31.5975 16.9104 31.5913 16.907 31.5828 16.9023C31.5657 16.8929 31.5397 16.8784 31.5052 16.8591C31.4363 16.8204 31.3337 16.7624 31.2024 16.6865C30.9396 16.5346 30.5621 16.3116 30.1083 16.0297C29.1987 15.4647 27.9914 14.6686 26.7891 13.7396C25.5809 12.806 24.4098 11.7626 23.5499 10.7072C22.67 9.62732 22.2279 8.6712 22.2279 7.89362H20.2279ZM31.1273 17.8936C30.7527 16.9664 30.7524 16.9666 30.7521 16.9667C30.7519 16.9667 30.7516 16.9669 30.7513 16.967C30.7507 16.9673 30.7499 16.9676 30.749 16.9679C30.7472 16.9687 30.7447 16.9697 30.7417 16.9709C30.7357 16.9734 30.7273 16.9768 30.7166 16.9812C30.6953 16.99 30.6648 17.0028 30.6258 17.0193C30.5478 17.0524 30.4356 17.1007 30.2941 17.1639C30.0113 17.2903 29.6105 17.4762 29.1309 17.7176C28.1742 18.1991 26.8918 18.9078 25.603 19.8126C24.3193 20.7138 22.9944 21.8337 21.9824 23.1472C20.9694 24.4621 20.2278 26.0278 20.2278 27.7931H22.2278C22.2278 26.6087 22.7237 25.4621 23.5668 24.3678C24.411 23.272 25.5609 22.2858 26.7521 21.4495C27.9382 20.6169 29.1306 19.9568 30.0301 19.504C30.4786 19.2782 30.8512 19.1055 31.1097 18.9901C31.2389 18.9324 31.3394 18.8891 31.4064 18.8607C31.4399 18.8465 31.465 18.836 31.4812 18.8293C31.4892 18.826 31.495 18.8236 31.4985 18.8222C31.5003 18.8215 31.5014 18.821 31.502 18.8208C31.5023 18.8206 31.5024 18.8206 31.5024 18.8206C31.5024 18.8206 31.5023 18.8206 31.5023 18.8206C31.5021 18.8207 31.5019 18.8208 31.1273 17.8936Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      Smart animate
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative items-center w-full divide-y-2 divide-black mx-auto 2xl:max-w-7xl border-b-2 border-black 2xl:border-x-2 lg:grid-cols-2"
+        >
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 divide-y-2 divide-black md:divide-y-0 md:divide-x-2 lg:grid-flow-col-dense"
+          >
+            <div
+              class="relative p-8 lg:px-20 items-center gap-12 h-full lg:inline-flex bg-white"
+            >
+              <div class="max-w-xl text-left">
+                <div>
+                  <img
+                    class="size-20"
+                    src="/images/blob4.svg"
+                    alt="your alt-text"
+                  />
+                  <p class="text-3xl mt-12 lg:text-5xl font-medium text-black">
+                    Navigating the digital financial frontier
+                  </p>
+                  <p class="max-w-xl mt-4 xl:text-xl tracking-wide text-black">
+                    Access a diverse range of cryptocurrencies in one unified
+                    platform, enabling you to explore and manage various digital
+                    assets effortlessly.
+                  </p>
+                  <div class="mt-8">
+                    <a
+                      class="text-black items-center shadow shadow-red-600 text-lg font-semibold inline-flex px-6 focus:outline-none justify-center text-center bg-red-300 focus:bg-red-600 border-red-600 duration-300 outline-none focus:shadow-none border-2 sm:w-auto py-3 rounded-lg h-16 tracking-wide focus:translate-y-1 w-full hover:bg-red-500"
+                      href="/"
+                      title="link to your page"
+                      aria-label="your label"
+                    >
+                      Explore all pages
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="block w-full aspect-square bg-red-500 h-full">
+              <img
+                class="object-cover"
+                src="/images/thumbnail4.svg"
+                alt="Navigating the digital financial frontier"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div
+          class="relative items-center w-full mx-auto 2xl:max-w-7xl 2xl:border-x-2 border-b-2 border-black"
+        >
+          <div
+            class="relative p-8 lg:p-20 items-center gap-12 h-full bg-yellow-500"
+          >
+            <div class="text-center max-w-4xl mx-auto">
+              <p class="text-4xl lg:text-5xl font-medium text-black">
+                Navigating the digital financial frontier
+              </p>
+            </div>
+            <div class="relative items-center w-full mx-auto mt-12">
+              <img
+                class="object-cover w-full lg:rounded-full h-96 border-2 border-black object-top bg-white"
+                src="/images/collab.svg"
+                alt="your alt-text"
+              />
+            </div>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:text-center lg:grid-cols-3 gap-6 lg:gap-12 mt-12"
+            >
+              <div>
+                <h2 class="text-3xl text-black font-medium">Secure Wallets</h2>
+                <p class="text-lg tracking-wide text-black mt-4">
+                  Rest easy knowing your crypto assets are protected by
+                  state-of-the-art security measures and encryption, ensuring
+                  your safety.
+                </p>
+              </div>
+              <div>
+                <h2 class="text-3xl text-black font-medium">
+                  Instant Transactions
+                </h2>
+                <p class="text-lg tracking-wide text-black mt-4">
+                  Experience the convenience of near-instantaneous
+                  cryptocurrency transfers, allowing you to send and receive
+                  digital assets in real-time, eliminating delays.
+                </p>
+              </div>
+              <div>
+                <h2 class="text-3xl text-black font-medium">
+                  Multi-Currency Support
+                </h2>
+                <p class="text-lg tracking-wide text-black mt-4">
+                  Access a diverse range of cryptocurrencies in one unified
+                  platform, enabling you to explore and manage various digital
+                  assets effortlessly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="relative flex items-center w-full">
+        <div
+          class="relative items-center w-full mx-auto 2xl:max-w-7xl divide-y-2 border-b-2 divide-black 2xl:border-x-2 border-black"
+        >
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 divide-y divide-black md:divide-y-0 md:divide-x-2"
+          >
+            <div class="grid grid-cols-1 divide-y-2 divide-black">
+              <div
+                class="relative p-8 lg:px-20 py-12 items-center gap-12 h-full lg:inline-flex bg-white"
+              >
+                <div class="max-w-xl text-center mx-auto">
+                  <p
+                    class="text-3xl lg:text-5xl 2xl:text-4xl tracking-tight font-medium text-black"
+                  >
+                    Multi-currency support
+                  </p>
+                  <p
+                    class="mt-4 text-lg tracking-wide text-black font-normal mx-auto"
+                  >
+                    Access a diverse range of cryptocurrencies in one unified
+                    platform, enabling you to explore and manage various digital
+                    assets.
+                  </p>
+                </div>
+              </div>
+              <div class="w-full aspect-square h-full bg-green-400">
+                <img
+                  class="border-b-0 object-cover"
+                  src="/images/thumbnail6.svg"
+                  alt="Thumbnail for Multi-currency support"
+                />
+              </div>
+            </div>
+            <div class="grid grid-cols-1 divide-y-2 divide-black">
+              <div
+                class="relative p-8 lg:px-20 py-12 items-center gap-12 h-full lg:inline-flex bg-white"
+              >
+                <div class="max-w-xl text-center mx-auto">
+                  <p
+                    class="text-3xl lg:text-5xl 2xl:text-4xl tracking-tight font-medium text-black"
+                  >
+                    Decentralized exchanges
+                  </p>
+                  <p
+                    class="mt-4 text-lg tracking-wide text-black font-normal mx-auto"
+                  >
+                    Embrace peer-to-peer trading without intermediaries. Trade
+                    directly with other users on our platform and enjoying the
+                    benefits.
+                  </p>
+                </div>
+              </div>
+              <div class="w-full aspect-square h-full bg-lila-500">
+                <img
+                  class="border-b-0 object-cover"
+                  src="/images/thumbnail5.svg"
+                  alt="Thumbnail for Decentralized exchanges"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div
+          class="relative items-center w-full mx-auto 2xl:max-w-7xl border-b-2 2xl:border-x-2 border-black"
+        >
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div
+              class="relative p-8 lg:px-20 items-center gap-12 h-full lg:inline-flex bg-yellow-500"
+            >
+              <div>
+                <p class="text-4xl tracking-tight font-medium text-black">
+                  "I've been using Flabbergasted for over a year now, and it has
+                  truly been a game-changer in my crypto journey. The platform's
+                  interface helped me understand the complex world of digital
+                  finance. "
+                </p>
+                <p class="max-w-xl mt-4 xl:text-xl tracking-tight text-black">
+                  Matt Lenoir Head of Design Ops at FRII-ends
+                </p>
+              </div>
+            </div>
+            <div
+              class="block w-full aspect-square lg:mt-0 bg-yellow-500 h-full"
+            >
+              <img
+                class="h-full object-cover border-black"
+                alt="testimonial"
+                src="/images/testimonial.png"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="overflow-hidden">
+        <div
+          class="mx-auto 2xl:max-w-7xl px-8 lg:px-20 2xl:px-0 bg-black overflow-hidden 2xl:border-x-2 border-black"
+        >
+          <div
+            class="relative flex items-center gap-4 py-12 animate-marqueeLeft whitespace-nowrap"
+          >
+            <img src="/brands/1.svg" alt="Brand Logo 1" /><img
+              src="/brands/2.svg"
+              alt="Brand Logo 2"
+            /><img src="/brands/3.svg" alt="Brand Logo 3" /><img
+              src="/brands/4.svg"
+              alt="Brand Logo 4"
+            /><img src="/brands/5.svg" alt="Brand Logo 5" /><img
+              src="/brands/6.svg"
+              alt="Brand Logo 6"
+            /><img src="/brands/7.svg" alt="Brand Logo 7" /><img
+              src="/brands/8.svg"
+              alt="Brand Logo 8"
+            /><img src="/brands/9.svg" alt="Brand Logo 9" /><img
+              src="/brands/10.svg"
+              alt="Brand Logo 10"
+            /><img src="/brands/11.svg" alt="Brand Logo 11" /><img
+              src="/brands/12.svg"
+              alt="Brand Logo 12"
+            />
+          </div>
+        </div>
+      </section>
+      <section
+        x-data="{annual: false}"
+        class="2xl:max-w-7xl mx-auto 2xl:border-x-2 border-black"
+      >
+        <div
+          class="grid grid-cols-1 lg:grid-cols-3 gap-0.5 border-y-2 border-black bg-black"
+        >
+          <div
+            class="relative bg-white h-full justify-between gap-12 lg:gap-0 flex flex-col p-8 lg:p-12 items-center mx-auto"
+          >
+            <div
+              class="overflow-hidden inline-flex gap-1 text-black z-0 text-lg font-semibold border-2 border-black rounded-xl p-1 w-full shadow"
+            >
+              <button
+                class="text-black w-full block px-8 py-2 h-14 transition rounded-lg"
+                @click="annual = false"
+                :class="annual == false ? 'bg-lila-500 ' : ''"
+                type="button"
+              >
+                Monthly
+              </button>
+              <button
+                class="text-black w-full block px-8 py-2 h-14 transition rounded-lg"
+                @click="annual = true"
+                :class="annual == true ? 'bg-lila-500 ' : ''"
+                type="button"
+              >
+                Annual
+              </button>
+            </div>
+            <div>
+              <p
+                class="text-3xl lg:text-5xl tracking-tight font-medium text-black text-balance"
+              >
+                Explore our competitive pricing options and packages
+              </p>
+              <p class="max-w-md mt-4 text-lg text-black mx-auto text-balance">
+                We want you to live a get out from the fake till you make it,
+                and start to make it so you make it.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col justify-start bg-yellow-400 gap-12 p-8 lg:p-12"
+          >
+            <div
+              class="bg-white border-2 border-black p-8 rounded-3xl shadow h-full"
+            >
+              <div
+                class="inline-flex items-center justify-between w-full font-semibold"
+              >
+                <h2 class="text-3xl justify-between tracking-tight">Starter</h2>
+                <img
+                  class="size-12 rounded-full shadow-small"
+                  src="/images/blob3.svg"
+                  alt="Starter"
+                />
+              </div>
+              <div class="text-3xl mt-8">
+                $
+                <span>
+                  <span x-show="!annual">15.00</span>
+                  <span x-show="annual">99</span>
+                </span>
+                <span class="text-base font-medium tracking-wide">
+                  /m
+                  <span x-show="annual" style="display: none">
+                    (billed annually)
+                  </span>
+                </span>
+              </div>
+              <p class="lg:text-base text-sm tracking-wide mt-8 text-balance">
+                Get started with our basic plan, ideal newcomers to the crypto
+                world.
+              </p>
+            </div>
+            <ul class="mt-2 space-y-8 text-base leading-6 tracking-wide">
+              <li class="flex items-start">
+                <svg
+                  class="w-6 shrink-0 h-6"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.22789 16.8936H4.22789V18.8936H5.22789V16.8936ZM31.2279 18.8936C31.7802 18.8936 32.2279 18.4459 32.2279 17.8936C32.2279 17.3413 31.7802 16.8936 31.2279 16.8936V18.8936ZM22.2279 7.89362V6.89362H20.2279V7.89362H22.2279ZM30.6485 18.671C31.1334 18.9355 31.7408 18.7568 32.0053 18.2719C32.2697 17.7871 32.0911 17.1797 31.6062 16.9152L30.6485 18.671ZM20.2278 27.7931V28.7931H22.2278V27.7931H20.2278ZM5.22789 18.8936H31.1273V16.8936H5.22789V18.8936ZM31.1273 18.8936H31.2279V16.8936H31.1273V18.8936ZM20.2279 7.89362C20.2279 9.36603 21.0232 10.7723 21.9994 11.9705C22.9957 13.1932 24.2995 14.3434 25.5662 15.3222C26.8387 16.3055 28.1063 17.1406 29.0529 17.7286C29.5271 18.0232 29.9231 18.2571 30.2017 18.4181C30.341 18.4987 30.4511 18.561 30.5272 18.6037C30.5653 18.625 30.5948 18.6414 30.6152 18.6527C30.6254 18.6583 30.6334 18.6627 30.6389 18.6658C30.6417 18.6673 30.6439 18.6685 30.6455 18.6694C30.6463 18.6698 30.647 18.6702 30.6475 18.6704C30.6477 18.6706 30.648 18.6707 30.6481 18.6708C30.6484 18.6709 30.6485 18.671 31.1274 17.7931C31.6062 16.9152 31.6063 16.9153 31.6064 16.9153C31.6064 16.9153 31.6064 16.9153 31.6064 16.9153C31.6063 16.9152 31.606 16.9151 31.6056 16.9149C31.6048 16.9144 31.6034 16.9137 31.6015 16.9126C31.5975 16.9104 31.5913 16.907 31.5828 16.9023C31.5657 16.8929 31.5397 16.8784 31.5052 16.8591C31.4363 16.8204 31.3337 16.7624 31.2024 16.6865C30.9396 16.5346 30.5621 16.3116 30.1083 16.0297C29.1987 15.4647 27.9914 14.6686 26.7891 13.7396C25.5809 12.806 24.4098 11.7626 23.5499 10.7072C22.67 9.62732 22.2279 8.6712 22.2279 7.89362H20.2279ZM31.1273 17.8936C30.7527 16.9664 30.7524 16.9666 30.7521 16.9667C30.7519 16.9667 30.7516 16.9669 30.7513 16.967C30.7507 16.9673 30.7499 16.9676 30.749 16.9679C30.7472 16.9687 30.7447 16.9697 30.7417 16.9709C30.7357 16.9734 30.7273 16.9768 30.7166 16.9812C30.6953 16.99 30.6648 17.0028 30.6258 17.0193C30.5478 17.0524 30.4356 17.1007 30.2941 17.1639C30.0113 17.2903 29.6105 17.4762 29.1309 17.7176C28.1742 18.1991 26.8918 18.9078 25.603 19.8126C24.3193 20.7138 22.9944 21.8337 21.9824 23.1472C20.9694 24.4621 20.2278 26.0278 20.2278 27.7931H22.2278C22.2278 26.6087 22.7237 25.4621 23.5668 24.3678C24.411 23.272 25.5609 22.2858 26.7521 21.4495C27.9382 20.6169 29.1306 19.9568 30.0301 19.504C30.4786 19.2782 30.8512 19.1055 31.1097 18.9901C31.2389 18.9324 31.3394 18.8891 31.4064 18.8607C31.4399 18.8465 31.465 18.836 31.4812 18.8293C31.4892 18.826 31.495 18.8236 31.4985 18.8222C31.5003 18.8215 31.5014 18.821 31.502 18.8208C31.5023 18.8206 31.5024 18.8206 31.5024 18.8206C31.5024 18.8206 31.5023 18.8206 31.5023 18.8206C31.5021 18.8207 31.5019 18.8208 31.1273 17.8936Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                <p class="ml-6">
+                  <span class="font-semibold">Secure Wallet ⏤ </span> Keep your
+                  digital assets safe with our secure wallet.
+                </p>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-6 shrink-0 h-6"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.22789 16.8936H4.22789V18.8936H5.22789V16.8936ZM31.2279 18.8936C31.7802 18.8936 32.2279 18.4459 32.2279 17.8936C32.2279 17.3413 31.7802 16.8936 31.2279 16.8936V18.8936ZM22.2279 7.89362V6.89362H20.2279V7.89362H22.2279ZM30.6485 18.671C31.1334 18.9355 31.7408 18.7568 32.0053 18.2719C32.2697 17.7871 32.0911 17.1797 31.6062 16.9152L30.6485 18.671ZM20.2278 27.7931V28.7931H22.2278V27.7931H20.2278ZM5.22789 18.8936H31.1273V16.8936H5.22789V18.8936ZM31.1273 18.8936H31.2279V16.8936H31.1273V18.8936ZM20.2279 7.89362C20.2279 9.36603 21.0232 10.7723 21.9994 11.9705C22.9957 13.1932 24.2995 14.3434 25.5662 15.3222C26.8387 16.3055 28.1063 17.1406 29.0529 17.7286C29.5271 18.0232 29.9231 18.2571 30.2017 18.4181C30.341 18.4987 30.4511 18.561 30.5272 18.6037C30.5653 18.625 30.5948 18.6414 30.6152 18.6527C30.6254 18.6583 30.6334 18.6627 30.6389 18.6658C30.6417 18.6673 30.6439 18.6685 30.6455 18.6694C30.6463 18.6698 30.647 18.6702 30.6475 18.6704C30.6477 18.6706 30.648 18.6707 30.6481 18.6708C30.6484 18.6709 30.6485 18.671 31.1274 17.7931C31.6062 16.9152 31.6063 16.9153 31.6064 16.9153C31.6064 16.9153 31.6064 16.9153 31.6064 16.9153C31.6063 16.9152 31.606 16.9151 31.6056 16.9149C31.6048 16.9144 31.6034 16.9137 31.6015 16.9126C31.5975 16.9104 31.5913 16.907 31.5828 16.9023C31.5657 16.8929 31.5397 16.8784 31.5052 16.8591C31.4363 16.8204 31.3337 16.7624 31.2024 16.6865C30.9396 16.5346 30.5621 16.3116 30.1083 16.0297C29.1987 15.4647 27.9914 14.6686 26.7891 13.7396C25.5809 12.806 24.4098 11.7626 23.5499 10.7072C22.67 9.62732 22.2279 8.6712 22.2279 7.89362H20.2279ZM31.1273 17.8936C30.7527 16.9664 30.7524 16.9666 30.7521 16.9667C30.7519 16.9667 30.7516 16.9669 30.7513 16.967C30.7507 16.9673 30.7499 16.9676 30.749 16.9679C30.7472 16.9687 30.7447 16.9697 30.7417 16.9709C30.7357 16.9734 30.7273 16.9768 30.7166 16.9812C30.6953 16.99 30.6648 17.0028 30.6258 17.0193C30.5478 17.0524 30.4356 17.1007 30.2941 17.1639C30.0113 17.2903 29.6105 17.4762 29.1309 17.7176C28.1742 18.1991 26.8918 18.9078 25.603 19.8126C24.3193 20.7138 22.9944 21.8337 21.9824 23.1472C20.9694 24.4621 20.2278 26.0278 20.2278 27.7931H22.2278C22.2278 26.6087 22.7237 25.4621 23.5668 24.3678C24.411 23.272 25.5609 22.2858 26.7521 21.4495C27.9382 20.6169 29.1306 19.9568 30.0301 19.504C30.4786 19.2782 30.8512 19.1055 31.1097 18.9901C31.2389 18.9324 31.3394 18.8891 31.4064 18.8607C31.4399 18.8465 31.465 18.836 31.4812 18.8293C31.4892 18.826 31.495 18.8236 31.4985 18.8222C31.5003 18.8215 31.5014 18.821 31.502 18.8208C31.5023 18.8206 31.5024 18.8206 31.5024 18.8206C31.5024 18.8206 31.5023 18.8206 31.5023 18.8206C31.5021 18.8207 31.5019 18.8208 31.1273 17.8936Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                <p class="ml-6">
+                  <span class="font-semibold"
+                    >Access to Crypto Education ⏤
+                  </span>
+                  Learn the ropes of cryptocurrency with access to educational
+                  resources.
+                </p>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-6 shrink-0 h-6"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.22789 16.8936H4.22789V18.8936H5.22789V16.8936ZM31.2279 18.8936C31.7802 18.8936 32.2279 18.4459 32.2279 17.8936C32.2279 17.3413 31.7802 16.8936 31.2279 16.8936V18.8936ZM22.2279 7.89362V6.89362H20.2279V7.89362H22.2279ZM30.6485 18.671C31.1334 18.9355 31.7408 18.7568 32.0053 18.2719C32.2697 17.7871 32.0911 17.1797 31.6062 16.9152L30.6485 18.671ZM20.2278 27.7931V28.7931H22.2278V27.7931H20.2278ZM5.22789 18.8936H31.1273V16.8936H5.22789V18.8936ZM31.1273 18.8936H31.2279V16.8936H31.1273V18.8936ZM20.2279 7.89362C20.2279 9.36603 21.0232 10.7723 21.9994 11.9705C22.9957 13.1932 24.2995 14.3434 25.5662 15.3222C26.8387 16.3055 28.1063 17.1406 29.0529 17.7286C29.5271 18.0232 29.9231 18.2571 30.2017 18.4181C30.341 18.4987 30.4511 18.561 30.5272 18.6037C30.5653 18.625 30.5948 18.6414 30.6152 18.6527C30.6254 18.6583 30.6334 18.6627 30.6389 18.6658C30.6417 18.6673 30.6439 18.6685 30.6455 18.6694C30.6463 18.6698 30.647 18.6702 30.6475 18.6704C30.6477 18.6706 30.648 18.6707 30.6481 18.6708C30.6484 18.6709 30.6485 18.671 31.1274 17.7931C31.6062 16.9152 31.6063 16.9153 31.6064 16.9153C31.6064 16.9153 31.6064 16.9153 31.6064 16.9153C31.6063 16.9152 31.606 16.9151 31.6056 16.9149C31.6048 16.9144 31.6034 16.9137 31.6015 16.9126C31.5975 16.9104 31.5913 16.907 31.5828 16.9023C31.5657 16.8929 31.5397 16.8784 31.5052 16.8591C31.4363 16.8204 31.3337 16.7624 31.2024 16.6865C30.9396 16.5346 30.5621 16.3116 30.1083 16.0297C29.1987 15.4647 27.9914 14.6686 26.7891 13.7396C25.5809 12.806 24.4098 11.7626 23.5499 10.7072C22.67 9.62732 22.2279 8.6712 22.2279 7.89362H20.2279ZM31.1273 17.8936C30.7527 16.9664 30.7524 16.9666 30.7521 16.9667C30.7519 16.9667 30.7516 16.9669 30.7513 16.967C30.7507 16.9673 30.7499 16.9676 30.749 16.9679C30.7472 16.9687 30.7447 16.9697 30.7417 16.9709C30.7357 16.9734 30.7273 16.9768 30.7166 16.9812C30.6953 16.99 30.6648 17.0028 30.6258 17.0193C30.5478 17.0524 30.4356 17.1007 30.2941 17.1639C30.0113 17.2903 29.6105 17.4762 29.1309 17.7176C28.1742 18.1991 26.8918 18.9078 25.603 19.8126C24.3193 20.7138 22.9944 21.8337 21.9824 23.1472C20.9694 24.4621 20.2278 26.0278 20.2278 27.7931H22.2278C22.2278 26.6087 22.7237 25.4621 23.5668 24.3678C24.411 23.272 25.5609 22.2858 26.7521 21.4495C27.9382 20.6169 29.1306 19.9568 30.0301 19.504C30.4786 19.2782 30.8512 19.1055 31.1097 18.9901C31.2389 18.9324 31.3394 18.8891 31.4064 18.8607C31.4399 18.8465 31.465 18.836 31.4812 18.8293C31.4892 18.826 31.495 18.8236 31.4985 18.8222C31.5003 18.8215 31.5014 18.821 31.502 18.8208C31.5023 18.8206 31.5024 18.8206 31.5024 18.8206C31.5024 18.8206 31.5023 18.8206 31.5023 18.8206C31.5021 18.8207 31.5019 18.8208 31.1273 17.8936Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                <p class="ml-6">
+                  <span class="font-semibold">Real-time Market Data ⏤ </span>
+                  Stay informed with live market data.
+                </p>
+              </li>
+            </ul>
+            <button
+              class="text-black items-center shadow shadow-black text-lg font-semibold inline-flex px-6 focus:outline-none justify-center text-center bg-white border-black ease-in-out transform transition-all focus:ring-lila-700 focus:shadow-none border-2 duration-100 focus:bg-black focus:text-white sm:w-auto py-3 rounded-lg h-16 focus:translate-y-1 w-full hover:text-lila-800"
+              type="submit"
+            >
+              Get started
+            </button>
+          </div>
+          <div
+            class="flex flex-col justify-start bg-lila-400 gap-12 p-8 lg:p-12"
+          >
+            <div
+              class="bg-white border-2 border-black p-8 rounded-3xl shadow h-full"
+            >
+              <div
+                class="inline-flex items-center justify-between w-full font-semibold"
+              >
+                <h2 class="text-3xl justify-between tracking-tight">Pro</h2>
+                <img
+                  class="size-12 rounded-full shadow-small"
+                  src="/images/blob1.svg"
+                  alt="Pro"
+                />
+              </div>
+              <div class="text-3xl mt-8">
+                $
+                <span>
+                  <span x-show="!annual">45.00</span>
+                  <span x-show="annual">199</span>
+                </span>
+                <span class="text-base font-medium tracking-wide">
+                  /m
+                  <span x-show="annual" style="display: none">
+                    (billed annually)
+                  </span>
+                </span>
+              </div>
+              <p class="lg:text-base text-sm tracking-wide mt-8 text-balance">
+                Take your crypto journey to the next level with our Pro plan,
+                designed for enthusiasts.
+              </p>
+            </div>
+            <ul class="mt-2 space-y-8 text-base leading-6 tracking-wide">
+              <li class="flex items-start">
+                <svg
+                  class="w-6 shrink-0 h-6"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.22789 16.8936H4.22789V18.8936H5.22789V16.8936ZM31.2279 18.8936C31.7802 18.8936 32.2279 18.4459 32.2279 17.8936C32.2279 17.3413 31.7802 16.8936 31.2279 16.8936V18.8936ZM22.2279 7.89362V6.89362H20.2279V7.89362H22.2279ZM30.6485 18.671C31.1334 18.9355 31.7408 18.7568 32.0053 18.2719C32.2697 17.7871 32.0911 17.1797 31.6062 16.9152L30.6485 18.671ZM20.2278 27.7931V28.7931H22.2278V27.7931H20.2278ZM5.22789 18.8936H31.1273V16.8936H5.22789V18.8936ZM31.1273 18.8936H31.2279V16.8936H31.1273V18.8936ZM20.2279 7.89362C20.2279 9.36603 21.0232 10.7723 21.9994 11.9705C22.9957 13.1932 24.2995 14.3434 25.5662 15.3222C26.8387 16.3055 28.1063 17.1406 29.0529 17.7286C29.5271 18.0232 29.9231 18.2571 30.2017 18.4181C30.341 18.4987 30.4511 18.561 30.5272 18.6037C30.5653 18.625 30.5948 18.6414 30.6152 18.6527C30.6254 18.6583 30.6334 18.6627 30.6389 18.6658C30.6417 18.6673 30.6439 18.6685 30.6455 18.6694C30.6463 18.6698 30.647 18.6702 30.6475 18.6704C30.6477 18.6706 30.648 18.6707 30.6481 18.6708C30.6484 18.6709 30.6485 18.671 31.1274 17.7931C31.6062 16.9152 31.6063 16.9153 31.6064 16.9153C31.6064 16.9153 31.6064 16.9153 31.6064 16.9153C31.6063 16.9152 31.606 16.9151 31.6056 16.9149C31.6048 16.9144 31.6034 16.9137 31.6015 16.9126C31.5975 16.9104 31.5913 16.907 31.5828 16.9023C31.5657 16.8929 31.5397 16.8784 31.5052 16.8591C31.4363 16.8204 31.3337 16.7624 31.2024 16.6865C30.9396 16.5346 30.5621 16.3116 30.1083 16.0297C29.1987 15.4647 27.9914 14.6686 26.7891 13.7396C25.5809 12.806 24.4098 11.7626 23.5499 10.7072C22.67 9.62732 22.2279 8.6712 22.2279 7.89362H20.2279ZM31.1273 17.8936C30.7527 16.9664 30.7524 16.9666 30.7521 16.9667C30.7519 16.9667 30.7516 16.9669 30.7513 16.967C30.7507 16.9673 30.7499 16.9676 30.749 16.9679C30.7472 16.9687 30.7447 16.9697 30.7417 16.9709C30.7357 16.9734 30.7273 16.9768 30.7166 16.9812C30.6953 16.99 30.6648 17.0028 30.6258 17.0193C30.5478 17.0524 30.4356 17.1007 30.2941 17.1639C30.0113 17.2903 29.6105 17.4762 29.1309 17.7176C28.1742 18.1991 26.8918 18.9078 25.603 19.8126C24.3193 20.7138 22.9944 21.8337 21.9824 23.1472C20.9694 24.4621 20.2278 26.0278 20.2278 27.7931H22.2278C22.2278 26.6087 22.7237 25.4621 23.5668 24.3678C24.411 23.272 25.5609 22.2858 26.7521 21.4495C27.9382 20.6169 29.1306 19.9568 30.0301 19.504C30.4786 19.2782 30.8512 19.1055 31.1097 18.9901C31.2389 18.9324 31.3394 18.8891 31.4064 18.8607C31.4399 18.8465 31.465 18.836 31.4812 18.8293C31.4892 18.826 31.495 18.8236 31.4985 18.8222C31.5003 18.8215 31.5014 18.821 31.502 18.8208C31.5023 18.8206 31.5024 18.8206 31.5024 18.8206C31.5024 18.8206 31.5023 18.8206 31.5023 18.8206C31.5021 18.8207 31.5019 18.8208 31.1273 17.8936Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                <p class="ml-6">
+                  <span class="font-semibold">All Basic Plan Features ⏤ </span>
+                  Access everything from the Basic plan.
+                </p>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-6 shrink-0 h-6"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.22789 16.8936H4.22789V18.8936H5.22789V16.8936ZM31.2279 18.8936C31.7802 18.8936 32.2279 18.4459 32.2279 17.8936C32.2279 17.3413 31.7802 16.8936 31.2279 16.8936V18.8936ZM22.2279 7.89362V6.89362H20.2279V7.89362H22.2279ZM30.6485 18.671C31.1334 18.9355 31.7408 18.7568 32.0053 18.2719C32.2697 17.7871 32.0911 17.1797 31.6062 16.9152L30.6485 18.671ZM20.2278 27.7931V28.7931H22.2278V27.7931H20.2278ZM5.22789 18.8936H31.1273V16.8936H5.22789V18.8936ZM31.1273 18.8936H31.2279V16.8936H31.1273V18.8936ZM20.2279 7.89362C20.2279 9.36603 21.0232 10.7723 21.9994 11.9705C22.9957 13.1932 24.2995 14.3434 25.5662 15.3222C26.8387 16.3055 28.1063 17.1406 29.0529 17.7286C29.5271 18.0232 29.9231 18.2571 30.2017 18.4181C30.341 18.4987 30.4511 18.561 30.5272 18.6037C30.5653 18.625 30.5948 18.6414 30.6152 18.6527C30.6254 18.6583 30.6334 18.6627 30.6389 18.6658C30.6417 18.6673 30.6439 18.6685 30.6455 18.6694C30.6463 18.6698 30.647 18.6702 30.6475 18.6704C30.6477 18.6706 30.648 18.6707 30.6481 18.6708C30.6484 18.6709 30.6485 18.671 31.1274 17.7931C31.6062 16.9152 31.6063 16.9153 31.6064 16.9153C31.6064 16.9153 31.6064 16.9153 31.6064 16.9153C31.6063 16.9152 31.606 16.9151 31.6056 16.9149C31.6048 16.9144 31.6034 16.9137 31.6015 16.9126C31.5975 16.9104 31.5913 16.907 31.5828 16.9023C31.5657 16.8929 31.5397 16.8784 31.5052 16.8591C31.4363 16.8204 31.3337 16.7624 31.2024 16.6865C30.9396 16.5346 30.5621 16.3116 30.1083 16.0297C29.1987 15.4647 27.9914 14.6686 26.7891 13.7396C25.5809 12.806 24.4098 11.7626 23.5499 10.7072C22.67 9.62732 22.2279 8.6712 22.2279 7.89362H20.2279ZM31.1273 17.8936C30.7527 16.9664 30.7524 16.9666 30.7521 16.9667C30.7519 16.9667 30.7516 16.9669 30.7513 16.967C30.7507 16.9673 30.7499 16.9676 30.749 16.9679C30.7472 16.9687 30.7447 16.9697 30.7417 16.9709C30.7357 16.9734 30.7273 16.9768 30.7166 16.9812C30.6953 16.99 30.6648 17.0028 30.6258 17.0193C30.5478 17.0524 30.4356 17.1007 30.2941 17.1639C30.0113 17.2903 29.6105 17.4762 29.1309 17.7176C28.1742 18.1991 26.8918 18.9078 25.603 19.8126C24.3193 20.7138 22.9944 21.8337 21.9824 23.1472C20.9694 24.4621 20.2278 26.0278 20.2278 27.7931H22.2278C22.2278 26.6087 22.7237 25.4621 23.5668 24.3678C24.411 23.272 25.5609 22.2858 26.7521 21.4495C27.9382 20.6169 29.1306 19.9568 30.0301 19.504C30.4786 19.2782 30.8512 19.1055 31.1097 18.9901C31.2389 18.9324 31.3394 18.8891 31.4064 18.8607C31.4399 18.8465 31.465 18.836 31.4812 18.8293C31.4892 18.826 31.495 18.8236 31.4985 18.8222C31.5003 18.8215 31.5014 18.821 31.502 18.8208C31.5023 18.8206 31.5024 18.8206 31.5024 18.8206C31.5024 18.8206 31.5023 18.8206 31.5023 18.8206C31.5021 18.8207 31.5019 18.8208 31.1273 17.8936Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                <p class="ml-6">
+                  <span class="font-semibold">Multi-Currency Support ⏤ </span>
+                  Diversify your portfolio with support for multiple
+                  cryptocurrencies.
+                </p>
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-6 shrink-0 h-6"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.22789 16.8936H4.22789V18.8936H5.22789V16.8936ZM31.2279 18.8936C31.7802 18.8936 32.2279 18.4459 32.2279 17.8936C32.2279 17.3413 31.7802 16.8936 31.2279 16.8936V18.8936ZM22.2279 7.89362V6.89362H20.2279V7.89362H22.2279ZM30.6485 18.671C31.1334 18.9355 31.7408 18.7568 32.0053 18.2719C32.2697 17.7871 32.0911 17.1797 31.6062 16.9152L30.6485 18.671ZM20.2278 27.7931V28.7931H22.2278V27.7931H20.2278ZM5.22789 18.8936H31.1273V16.8936H5.22789V18.8936ZM31.1273 18.8936H31.2279V16.8936H31.1273V18.8936ZM20.2279 7.89362C20.2279 9.36603 21.0232 10.7723 21.9994 11.9705C22.9957 13.1932 24.2995 14.3434 25.5662 15.3222C26.8387 16.3055 28.1063 17.1406 29.0529 17.7286C29.5271 18.0232 29.9231 18.2571 30.2017 18.4181C30.341 18.4987 30.4511 18.561 30.5272 18.6037C30.5653 18.625 30.5948 18.6414 30.6152 18.6527C30.6254 18.6583 30.6334 18.6627 30.6389 18.6658C30.6417 18.6673 30.6439 18.6685 30.6455 18.6694C30.6463 18.6698 30.647 18.6702 30.6475 18.6704C30.6477 18.6706 30.648 18.6707 30.6481 18.6708C30.6484 18.6709 30.6485 18.671 31.1274 17.7931C31.6062 16.9152 31.6063 16.9153 31.6064 16.9153C31.6064 16.9153 31.6064 16.9153 31.6064 16.9153C31.6063 16.9152 31.606 16.9151 31.6056 16.9149C31.6048 16.9144 31.6034 16.9137 31.6015 16.9126C31.5975 16.9104 31.5913 16.907 31.5828 16.9023C31.5657 16.8929 31.5397 16.8784 31.5052 16.8591C31.4363 16.8204 31.3337 16.7624 31.2024 16.6865C30.9396 16.5346 30.5621 16.3116 30.1083 16.0297C29.1987 15.4647 27.9914 14.6686 26.7891 13.7396C25.5809 12.806 24.4098 11.7626 23.5499 10.7072C22.67 9.62732 22.2279 8.6712 22.2279 7.89362H20.2279ZM31.1273 17.8936C30.7527 16.9664 30.7524 16.9666 30.7521 16.9667C30.7519 16.9667 30.7516 16.9669 30.7513 16.967C30.7507 16.9673 30.7499 16.9676 30.749 16.9679C30.7472 16.9687 30.7447 16.9697 30.7417 16.9709C30.7357 16.9734 30.7273 16.9768 30.7166 16.9812C30.6953 16.99 30.6648 17.0028 30.6258 17.0193C30.5478 17.0524 30.4356 17.1007 30.2941 17.1639C30.0113 17.2903 29.6105 17.4762 29.1309 17.7176C28.1742 18.1991 26.8918 18.9078 25.603 19.8126C24.3193 20.7138 22.9944 21.8337 21.9824 23.1472C20.9694 24.4621 20.2278 26.0278 20.2278 27.7931H22.2278C22.2278 26.6087 22.7237 25.4621 23.5668 24.3678C24.411 23.272 25.5609 22.2858 26.7521 21.4495C27.9382 20.6169 29.1306 19.9568 30.0301 19.504C30.4786 19.2782 30.8512 19.1055 31.1097 18.9901C31.2389 18.9324 31.3394 18.8891 31.4064 18.8607C31.4399 18.8465 31.465 18.836 31.4812 18.8293C31.4892 18.826 31.495 18.8236 31.4985 18.8222C31.5003 18.8215 31.5014 18.821 31.502 18.8208C31.5023 18.8206 31.5024 18.8206 31.5024 18.8206C31.5024 18.8206 31.5023 18.8206 31.5023 18.8206C31.5021 18.8207 31.5019 18.8208 31.1273 17.8936Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                <p class="ml-6">
+                  <span class="font-semibold">NFT Marketplace Access ⏤ </span>
+                  Dive into the world of NFTs and trade.
+                </p>
+              </li>
+            </ul>
+            <button
+              class="text-black items-center shadow shadow-black text-lg font-semibold inline-flex px-6 focus:outline-none justify-center text-center bg-white border-black ease-in-out transform transition-all focus:ring-lila-700 focus:shadow-none border-2 duration-100 focus:bg-black focus:text-white sm:w-auto py-3 rounded-lg h-16 focus:translate-y-1 w-full hover:text-lila-800"
+              type="submit"
+            >
+              Get started
+            </button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div
+          class="items-center w-full mx-auto 2xl:max-w-7xl bg-black p-8 lg:p-20 2xl:px-0 2xl:border-x-2 border-black"
+        >
+          <div class="items-center gap-12 h-full">
+            <div class="text-center max-w-3xl mx-auto">
+              <img
+                class="mx-auto justify-center size-32 shadow shadow-white rounded-full"
+                src="/images/blob1.svg"
+                alt="your alt-text"
+              />
+              <p
+                class="text-3xl lg:text-5xl mt-8 tracking-tight font-medium text-white"
+              >
+                Ready to dive in?
+                <span class="md:block lg:text-lila-600"
+                  >Join flabbergasted today!</span
+                >
+              </p>
+              <p
+                class="max-w-lg mx-auto mt-4 lg:text-xl tracking-wide text-white"
+              >
+                Explore the limitless possibilities of digital finance and
+                embark on a journey towards financial empowerment
+              </p>
+              <div class="mt-12">
+                <a
+                  class="text-black items-center shadow shadow-lila-600 text-lg font-semibold inline-flex px-6 focus:outline-none justify-center text-center bg-lila-300 focus:bg-lila-600 border-lila-600 duration-300 outline-none focus:shadow-none border-2 sm:w-auto py-3 rounded-lg h-16 tracking-wide focus:translate-y-1 w-full hover:bg-lila-500"
+                  title="link to your page"
+                  aria-label="your label"
+                  href="/"
+                  >Explore all pages <span class="ml-3">&rarr;</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="relative flex items-center w-full bg-white">
+        <div
+          class="relative items-center w-full mx-auto 2xl:max-w-7xl border-b-2 border-black 2xl:border-x-2"
+        >
+          <div
+            class="grid grid-cols-1 lg:grid-cols-3 lg:divide-x-2 divide-black"
+          >
+            <div class="text-center lg:text-left p-8 lg:p-20 bg-lila-500">
+              <p
+                class="text-3xl lg:text-9xl tracking-tight font-medium text-black"
+              >
+                FAQ
+              </p>
+              <p class="text-xl tracking-wide mt-4 text-black max-w-xs">
+                Answers to commonly asked questions about our platform
+              </p>
+            </div>
+            <div
+              class="relative w-full mx-auto lg:col-span-2 text-xl font-medium divide-y-2 divide-black"
+            >
+              <details class="w-full p-8 text-left select-none">
+                <summary
+                  class="flex group items-center cursor-pointer justify-between w-full text-left select-none text-black hover:text-lila-900 font-display hover:text-accent-500"
+                >
+                  How does end-to-end encryption work?
+                  <div
+                    class="size-8 border-2 border-black inline-flex duration-300 ease-out items-center justify-center rounded-full shadow-tiny shadow-black group-hover:bg-lila-500 group-hover:text-black group-open:-rotate-45"
+                  >
+                    <svg
+                      class="size-5 text-accent-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v12m6-6H6"
+                      ></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div
+                  class="py-8 text-slate-600 font-sans text-lg max-w-3xl font-normal"
+                >
+                  End-to-end encryption ensures that only the sender and
+                  recipient can access the content of a message. The information
+                  is encrypted on the sender&#39;s device and can only be
+                  decrypted by the intended recipient, preventing any
+                  intermediaries, including the platform provider, from
+                  accessing the data.
+                </div>
+              </details>
+              <details class="w-full p-8 text-left select-none">
+                <summary
+                  class="flex group items-center cursor-pointer justify-between w-full text-left select-none text-black hover:text-lila-900 font-display hover:text-accent-500"
+                >
+                  Can I access my encrypted data if I forget my encryption key?
+                  <div
+                    class="size-8 border-2 border-black inline-flex duration-300 ease-out items-center justify-center rounded-full shadow-tiny shadow-black group-hover:bg-lila-500 group-hover:text-black group-open:-rotate-45"
+                  >
+                    <svg
+                      class="size-5 text-accent-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v12m6-6H6"
+                      ></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div
+                  class="py-8 text-slate-600 font-sans text-lg max-w-3xl font-normal"
+                >
+                  No, forgetting or losing your encryption key means that your
+                  encrypted data cannot be accessed. This is a crucial security
+                  measure to ensure that even if someone gains unauthorized
+                  access to your account, they won&#39;t be able to decrypt and
+                  view your messages or files.
+                </div>
+              </details>
+              <details class="w-full p-8 text-left select-none">
+                <summary
+                  class="flex group items-center cursor-pointer justify-between w-full text-left select-none text-black hover:text-lila-900 font-display hover:text-accent-500"
+                >
+                  Are there any limitations to the self-destructing messages
+                  feature?
+                  <div
+                    class="size-8 border-2 border-black inline-flex duration-300 ease-out items-center justify-center rounded-full shadow-tiny shadow-black group-hover:bg-lila-500 group-hover:text-black group-open:-rotate-45"
+                  >
+                    <svg
+                      class="size-5 text-accent-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v12m6-6H6"
+                      ></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div
+                  class="py-8 text-slate-600 font-sans text-lg max-w-3xl font-normal"
+                >
+                  Self-destructing messages are designed to automatically delete
+                  themselves after a specific period or upon being read by the
+                  recipient. However, it&#39;s important to note that the
+                  feature only removes the message from the devices involved in
+                  the conversation. Recipients may take screenshots or use other
+                  means to capture the content, which is beyond the
+                  platform&#39;s control.
+                </div>
+              </details>
+              <details class="w-full p-8 text-left select-none">
+                <summary
+                  class="flex group items-center cursor-pointer justify-between w-full text-left select-none text-black hover:text-lila-900 font-display hover:text-accent-500"
+                >
+                  What happens if I enable two-factor authentication and lose my
+                  device?
+                  <div
+                    class="size-8 border-2 border-black inline-flex duration-300 ease-out items-center justify-center rounded-full shadow-tiny shadow-black group-hover:bg-lila-500 group-hover:text-black group-open:-rotate-45"
+                  >
+                    <svg
+                      class="size-5 text-accent-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v12m6-6H6"
+                      ></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div
+                  class="py-8 text-slate-600 font-sans text-lg max-w-3xl font-normal"
+                >
+                  Losing your device doesn&#39;t automatically compromise your
+                  account&#39;s security. It&#39;s recommended to contact our
+                  support team as soon as possible to disable the two-factor
+                  authentication on your lost device and set up the
+                  authentication on your new device. This process will help
+                  protect your account from unauthorized access while ensuring
+                  you can regain access to it.
+                </div>
+              </details>
+              <details class="w-full p-8 text-left select-none">
+                <summary
+                  class="flex group items-center cursor-pointer justify-between w-full text-left select-none text-black hover:text-lila-900 font-display hover:text-accent-500"
+                >
+                  Is my personal information shared or sold to third parties?
+                  <div
+                    class="size-8 border-2 border-black inline-flex duration-300 ease-out items-center justify-center rounded-full shadow-tiny shadow-black group-hover:bg-lila-500 group-hover:text-black group-open:-rotate-45"
+                  >
+                    <svg
+                      class="size-5 text-accent-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v12m6-6H6"
+                      ></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div
+                  class="py-8 text-slate-600 font-sans text-lg max-w-3xl font-normal"
+                >
+                  No, we strictly adhere to a privacy-centric approach. Your
+                  personal information is never shared, sold, or monetized. We
+                  prioritize your privacy and ensure that your data remains
+                  confidential and only accessible to you.
+                </div>
+              </details>
+              <details class="w-full p-8 text-left select-none">
+                <summary
+                  class="flex group items-center cursor-pointer justify-between w-full text-left select-none text-black hover:text-lila-900 font-display hover:text-accent-500"
+                >
+                  Can I use this platform on multiple devices?
+                  <div
+                    class="size-8 border-2 border-black inline-flex duration-300 ease-out items-center justify-center rounded-full shadow-tiny shadow-black group-hover:bg-lila-500 group-hover:text-black group-open:-rotate-45"
+                  >
+                    <svg
+                      class="size-5 text-accent-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v12m6-6H6"
+                      ></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div
+                  class="py-8 text-slate-600 font-sans text-lg max-w-3xl font-normal"
+                >
+                  Yes, you can access our platform on multiple devices. Your
+                  encrypted data remains synced across all devices, allowing you
+                  to seamlessly communicate and access your files and messages
+                  from anywhere.
+                </div>
+              </details>
+              <details class="w-full p-8 text-left select-none">
+                <summary
+                  class="flex group items-center cursor-pointer justify-between w-full text-left select-none text-black hover:text-lila-900 font-display hover:text-accent-500"
+                >
+                  Are there any storage limitations for files and documents?
+                  <div
+                    class="size-8 border-2 border-black inline-flex duration-300 ease-out items-center justify-center rounded-full shadow-tiny shadow-black group-hover:bg-lila-500 group-hover:text-black group-open:-rotate-45"
+                  >
+                    <svg
+                      class="size-5 text-accent-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v12m6-6H6"
+                      ></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div
+                  class="py-8 text-slate-600 font-sans text-lg max-w-3xl font-normal"
+                >
+                  Our platform provides ample storage space for your files and
+                  documents. However, there may be storage limitations based on
+                  the pricing plan you choose. We offer flexible plans to suit
+                  your needs and provide options to upgrade if you require
+                  additional storage capacity.
+                </div>
+              </details>
+              <details class="w-full p-8 text-left select-none">
+                <summary
+                  class="flex group items-center cursor-pointer justify-between w-full text-left select-none text-black hover:text-lila-900 font-display hover:text-accent-500"
+                >
+                  Is it possible to export my data from the platform?
+                  <div
+                    class="size-8 border-2 border-black inline-flex duration-300 ease-out items-center justify-center rounded-full shadow-tiny shadow-black group-hover:bg-lila-500 group-hover:text-black group-open:-rotate-45"
+                  >
+                    <svg
+                      class="size-5 text-accent-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v12m6-6H6"
+                      ></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div
+                  class="py-8 text-slate-600 font-sans text-lg max-w-3xl font-normal"
+                >
+                  Yes, you can export your data from the platform. We offer
+                  export features that allow you to download your messages,
+                  files, and documents, ensuring you have a local copy for
+                  backup or migration purposes. It provides you with greater
+                  control and flexibility over your data.
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="overflow-hidden">
+        <div
+          class="p-8 lg:p-20 pb-0 lg:pb-0 2xl:max-w-7xl mx-auto bg-black border-b border-black"
+        >
+          <div class="h-full space-y-12 lg:space-y-0 pb-12 lg:pb-48">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-32 items-start"
+            >
+              <div class="flex flex-col gap-6 lg:col-span-2 max-w-xl">
+                <div>
+                  <h3
+                    class="text-3xl md:text-4xl text-white lg:text-5xl font-medium tracking-tight"
+                  >
+                    Subscribe, get tips to grow the way you deserve.
+                  </h3>
+                  <form
+                    class="bg-white border-2 border-black overflow-hidden justify-between mt-4 rounded-xl sm:flex"
+                  >
+                    <label class="sr-only" for="email-address"
+                      >Email address</label
+                    >
+                    <input
+                      required
+                      name="email"
+                      type="email"
+                      id="email-address"
+                      autocomplete="email"
+                      placeholder="Enter your email"
+                      class="w-full px-5 text-center lg:text-left border-transparent focus:ring-black h-20 text-sm py-3 bg-transparent focus:border-black placeholder-black rounded-xl"
+                    />
+                    <button
+                      class="text-black flex items-center text-lg font-bold focus:outline-none justify-center text-center bg-lila-500 lg:border-l-2 border-black transform transition hover:shadow-none duration-200 hover:bg-lila-600 w-full h-20 sm:w-20 shrink-0"
+                      type="submit"
+                      aria-label="Submit email"
+                    >
+                      <svg
+                        class="size-10"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.22789 16.8936H4.22789V18.8936H5.22789V16.8936ZM31.2279 18.8936C31.7802 18.8936 32.2279 18.4459 32.2279 17.8936C32.2279 17.3413 31.7802 16.8936 31.2279 16.8936V18.8936ZM22.2279 7.89362V6.89362H20.2279V7.89362H22.2279ZM30.6485 18.671C31.1334 18.9355 31.7408 18.7568 32.0053 18.2719C32.2697 17.7871 32.0911 17.1797 31.6062 16.9152L30.6485 18.671ZM20.2278 27.7931V28.7931H22.2278V27.7931H20.2278ZM5.22789 18.8936H31.1273V16.8936H5.22789V18.8936ZM31.1273 18.8936H31.2279V16.8936H31.1273V18.8936ZM20.2279 7.89362C20.2279 9.36603 21.0232 10.7723 21.9994 11.9705C22.9957 13.1932 24.2995 14.3434 25.5662 15.3222C26.8387 16.3055 28.1063 17.1406 29.0529 17.7286C29.5271 18.0232 29.9231 18.2571 30.2017 18.4181C30.341 18.4987 30.4511 18.561 30.5272 18.6037C30.5653 18.625 30.5948 18.6414 30.6152 18.6527C30.6254 18.6583 30.6334 18.6627 30.6389 18.6658C30.6417 18.6673 30.6439 18.6685 30.6455 18.6694C30.6463 18.6698 30.647 18.6702 30.6475 18.6704C30.6477 18.6706 30.648 18.6707 30.6481 18.6708C30.6484 18.6709 30.6485 18.671 31.1274 17.7931C31.6062 16.9152 31.6063 16.9153 31.6064 16.9153C31.6064 16.9153 31.6064 16.9153 31.6064 16.9153C31.6063 16.9152 31.606 16.9151 31.6056 16.9149C31.6048 16.9144 31.6034 16.9137 31.6015 16.9126C31.5975 16.9104 31.5913 16.907 31.5828 16.9023C31.5657 16.8929 31.5397 16.8784 31.5052 16.8591C31.4363 16.8204 31.3337 16.7624 31.2024 16.6865C30.9396 16.5346 30.5621 16.3116 30.1083 16.0297C29.1987 15.4647 27.9914 14.6686 26.7891 13.7396C25.5809 12.806 24.4098 11.7626 23.5499 10.7072C22.67 9.62732 22.2279 8.6712 22.2279 7.89362H20.2279ZM31.1273 17.8936C30.7527 16.9664 30.7524 16.9666 30.7521 16.9667C30.7519 16.9667 30.7516 16.9669 30.7513 16.967C30.7507 16.9673 30.7499 16.9676 30.749 16.9679C30.7472 16.9687 30.7447 16.9697 30.7417 16.9709C30.7357 16.9734 30.7273 16.9768 30.7166 16.9812C30.6953 16.99 30.6648 17.0028 30.6258 17.0193C30.5478 17.0524 30.4356 17.1007 30.2941 17.1639C30.0113 17.2903 29.6105 17.4762 29.1309 17.7176C28.1742 18.1991 26.8918 18.9078 25.603 19.8126C24.3193 20.7138 22.9944 21.8337 21.9824 23.1472C20.9694 24.4621 20.2278 26.0278 20.2278 27.7931H22.2278C22.2278 26.6087 22.7237 25.4621 23.5668 24.3678C24.411 23.272 25.5609 22.2858 26.7521 21.4495C27.9382 20.6169 29.1306 19.9568 30.0301 19.504C30.4786 19.2782 30.8512 19.1055 31.1097 18.9901C31.2389 18.9324 31.3394 18.8891 31.4064 18.8607C31.4399 18.8465 31.465 18.836 31.4812 18.8293C31.4892 18.826 31.495 18.8236 31.4985 18.8222C31.5003 18.8215 31.5014 18.821 31.502 18.8208C31.5023 18.8206 31.5024 18.8206 31.5024 18.8206C31.5024 18.8206 31.5023 18.8206 31.5023 18.8206C31.5021 18.8207 31.5019 18.8208 31.1273 17.8936Z"
+                          fill="black"
+                        ></path>
+                      </svg>
+                    </button>
+                    <p id="email-error" class="sr-only"></p>
+                  </form>
+                </div>
+                <div
+                  class="flex flex-col gap-6"
+                  x-data="{ year: new Date().getFullYear() }"
+                >
+                  <p class="text-white text-xl font-normal tracking-wide">
+                    Webstax Inc
+                    <span>
+                      © Copyright <span x-text="year"></span>. All rights
+                      reserved.</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <nav
+                class="grid grid-cols-1 gap-x-12 gap-y-4 l justify-between text-base tracking-wide items-center text-white"
+                role="navigation"
+              >
+                <a
+                  class="hover:text-lila-500"
+                  title="link to your page"
+                  aria-label="your label"
+                  href="/"
+                  >Overview</a
+                >
+                <a
+                  class="hover:text-lila-500"
+                  title="link to your page"
+                  aria-label="your label"
+                  href="/style-guide"
+                  >Style Guide</a
+                >
+                <a
+                  class="hover:text-lila-500"
+                  title="link to your page"
+                  aria-label="your label"
+                  href="https://www.lexingtonthemes.com/legal/license"
+                  >License</a
+                >
+                <a
+                  class="hover:text-lila-500"
+                  title="link to your page"
+                  aria-label="your label"
+                  href="https://www.lexingtonthemes.com/documentation/quick-start"
+                  >Documentation</a
+                >
+              </nav>
+            </div>
+            <img src="/cover.png" alt="logo" class="mx-auto" />
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
